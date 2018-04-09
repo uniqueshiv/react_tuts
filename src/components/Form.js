@@ -47,7 +47,7 @@ class Forms extends Component{
     return(
       <div>
       <h2>Form </h2>
-      <input type="text" name="username" value={this.state.username} onChange={this.formHandler}/><br/>
+    <input type="text" name="username" value={this.state.username} onChange={this.formHandler}/><br/>
 
       Developer Category:
       <br />
@@ -64,7 +64,23 @@ class Forms extends Component{
       Mern Stack<input type="radio"  onChange={this.radioHandler} name="devcateogry" value="Mernstack" checked={this.state.radioGroup['Mernstack']} />
       </label><br />
 
+
+      Technologies:
+      <br />
+      <label>
+
+      Mean Stack<input type="radio" onChange={this.radioHandler} name="devcateogry" value="Meanstack" checked={this.state.radioGroup['Meanstack']} />
+      </label>
+      <br/>
+      <label>
+      LAMP Stack<input type="radio"  onChange={this.radioHandler} name="devcateogry" value="Lampstack" checked={this.state.radioGroup['Lampstack']}/>
+      </label>
+      <br/>
+      <label>
+      Mern Stack<input type="radio"  onChange={this.radioHandler} name="devcateogry" value="Mernstack" checked={this.state.radioGroup['Mernstack']} />
+      </label><br />
       <button onClick={this.clickHandler}>Add</button>
+
       </div>
     )
   }
